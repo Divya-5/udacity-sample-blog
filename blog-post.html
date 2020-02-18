@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Blog-Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/blog-post.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Blog Post</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <article>
+            <a href="/">
+              <div class="backlog-links">
+                <img src="images/back.svg" class="back-icon" alt="back-icon">
+                <p>Back to Blog</p>
+              </div>
+            </a>
+
+            <div class="blog-title">
+              <h2>BEM and SASS: A Perfect Match</h2>
+            </div>
+            <div class="col-sm-12 col-lg-12 author-avatar">
+              <div class="author-detail">
+                <img src="https://secure.gravatar.com/avatar/3fc858e0bdb4a72fe5ca05c757f6b32e?s=32&amp;d=mm&amp;r=g"
+                  class="avatar" alt="Avatar-img">
+                <div class="author-name">by <span>Divyanshi Rastogi <p>She is likely minded person</p></span>
+                </div>
+              </div>
+              <div class="posted-ondate"><img alt="Straumann"
+                  src="https://loopblog.straumann.com/wp-content/themes/loop-blog/assets/images/Calenders.png">
+                <a href="https://hashouttech.com/">
+                  <span>Hashout</span>
+                </a>
+              </div>
+              <div class="social-links">
+                <a href="https://www.facebook.com/">
+                  <img src="images/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/divya5rastogi/">
+                  <img src="images/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://www.twitter.com/">
+                  <img src="images/twitter.svg" alt="twitter">
+                </a>
+              </div>
+            </div>
+
+
+
+            <div class="blog-tagline">
+              <p>Fish and chips, Posh and Becks, Netflix and chill. These are all things that go well together; or so
+                I’m told. It’s time to add BEM and SASS to the list.</p>
+            </div>
+            <div class="c-callout c-callout-info">
+              <p>If BEM is the cake, then SASS is the icing.</p>
+            </div>
+            <div class="img-container">
+              <img alt="featured-img" src="images/build-habits.jpg">
+            </div>
+            <div class="content">
+              <p>Taking the above navigation bar. Traditionally in 1999 (if HTML5 elements were a thing then), we may
+                have created the following markup whilst listening to Nickelback on Napster. Everything works great, we
+                get the navigation bar we want.</p>
+              <div class="c-callout code-snippet">
+                <img alt="featured-img" class="code-img" src="images/code.png">
+              </div>
+              <div class="unordered-list">
+                <h2>What are they?</h2>
+                <ul>
+                  <li>BEM (Block. Element. Modifier) is a naming methodology, which aims to solve many of the problems
+                    you’ll commonly encounter when naming classes and structuring your CSS. It also does a great job of
+                    enabling you to create reusable front end components, which is something we all strive for: to be
+                    healthy, wealthy and create reusable components.</li>
+                  <li>SASS on the other hand, stands for Syntactically Awesome Style Sheets. Way to blow your own
+                    trumpet. Although, “awesome” is potentially an understated adjective for this thing. Their tagline,
+                    “CSS with superpowers” pretty much covers it. It allows you to nest selectors, create loops,
+                    functions and all the fun stuff that you wish you could do with CSS.</li>
+                </ul>
+              </div>
+              <div class="ordered-list">
+                <h2>However, there are a few problems with the above approach:</h2>
+                <ol>
+                  <li>To target those li you’ll need to be doing something like .nav li. What happens if we want to
+                    change the list to instead be a group of divs? The CSS needs updating as well as the HTML.</li>
+                  <li>.active may well be declared somewhere else in the CSS. Which may start conflicting with the
+                    styles. Especially if the conflicting selector comes in after you’ve created the navigation bar; you
+                    may not even spot the conflict until it’s too late.</li>
+                  <li>This can’t be modular. It can’t be dropped anywhere in your code. What’s to say with this approach
+                    we don’t have .header li with some conflicting styles. It’s a never ending battle with specificity —
+                    easy for you to say.</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

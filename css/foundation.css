@@ -1,0 +1,58 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h5 {
+  font-weight: 600;
+  color: #fff;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.25rem;
+}
+ul,
+ol {
+  padding-left: 15px;
+  font-size: 1.25rem;
+}
+.unordered-list,
+.ordered-list {
+  margin: 2rem 0;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+footer {
+  background-color: #6d7780;
+  padding: 10px;
+}
+@media screen and (max-width: 576px) {
+  p,
+  ul,
+  ol {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .unordered-list h2,
+  .ordered-list h2 {
+    font-size: 1.5rem;
+  }
+  .blog-title h2 {
+    font-size: 1.5rem;
+  }
+}
